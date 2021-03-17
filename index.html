@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPW | Code Quiz</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!--Header with timer and leaderboards link-->
+    <nav class="header">
+        <div class="card-body justify-content-end">
+            <a type="button" id="board" onclick=""></button>Leaderboard</button>
+            <span id="timer"></span>
+        </div>
+    </nav>
+
+    <!--Main content-->
+    <main class="container">
+
+        <!--Quiz front page-->
+        <div id="frontPage">
+            <h1>Coding Challenge!</h1>
+            <p>Within 900 seconds, answer the following questions. Incorrect answers will result in a time reduction by 10 seconds. Good luck!</p>
+            <div id="button">
+                <button type="button" class="btn active" id="submit">Start</button>
+            </div>
+        </div>
+
+        <!--Questions-->
+        <div class="questionPage">
+            <h2 id="questionHeader"></h2>
+            <ul>
+                <li><button type="button" class="btn questionButton" id="one"></button>
+                <li><button type="button" class="btn questionButton" id="two"></button>
+                <li><button type="button" class="btn questionButton" id="three"></button>
+                <li><button type="button" class="btn questionButton" id="four"></button>
+            </ul>
+
+            <!--Tells if user answer is correct or incorrect-->
+            <div id="answerResult"></div>
+        </div>
+
+        <!--Final score-->
+        <div id="scorePage">
+            <h2 id="finish">Finished!</h2>
+            <div id="finalScore"></div>
+            <form class="row">
+                <div class="form-inline">
+                    <label for="text" id="initials" class ="col col=form-label input-group"></label>
+                    <div>
+                        <input type="text" class="col form-control" id ="initials">
+                        <button id="initialBtn" class="btn" type="button"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Buttons to return from or clear leaderboard-->
+        <div id="boardBtn">
+            <h2 id="boardTitle">Leaderboard</h2>
+            <p id="boardList"></p>
+            <div class="col-sm-12 text-center">
+                <button id="back" class="btn" type="button">back</button>
+                <button id="clear" class="btn" value="reset-form" type="button">clear leaderboard</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</body>
+</html>
